@@ -44,11 +44,11 @@ const run = async () => {
         try {
             await new Promise((resolve, reject) => {
                 exec(
-                "git remote remove bb", 
-                (err, stdout, stderr) => {
-                    if (err) return reject(err)
-                    resolve()
-                },
+                    "git remote remove bb", 
+                    (err, stdout, stderr) => {
+                        if (err) return reject(err);
+                        resolve();
+                    },
                 )
             });
         } catch (err) {}
